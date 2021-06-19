@@ -6,9 +6,11 @@ export const BasePagina: React.FC = ({ children }) => {
   return (
     <>
       <Meta />
-      <Navbar />
-      {children}
-      <Footer />
+      <div className="bg-base">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
     </>
   )
 }
